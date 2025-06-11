@@ -7,7 +7,7 @@ This guide explains how to use the Movie Schedule web application to search for 
 1. Make sure your Raspberry Pi is powered on and connected to the network.
 2. Open a web browser on your device (computer, tablet, phone).
 3. Enter the Raspberry Pi’s IP address in the address bar:
-http://<your-raspberry-pi-ip>/
+<your-raspberry-pi-ip>/index.php
 ## 🎬 Homepage Features
 
 On the homepage (`index.php`), you'll see:
