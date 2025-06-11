@@ -1,4 +1,25 @@
-1. 安裝 Apache + PHP + MariaDB
-2. 將專案放至 /var/www/html/
-3. 匯入 sql/create_tables.sql 至 movies_db
-4. 修改 db.php 中的資料庫設定
+# Installation Guide
+
+## Environment Requirements
+
+- Raspberry Pi Zero 2 W
+- Apache2
+- PHP
+- MariaDB
+- Git (optional)
+
+## Steps
+
+1. Installation steps:
+sudo apt update
+sudo apt install apache2 php mariadb-server git unzip -y
+git clone https://github.com/ilovestage66/moviescheduleproject.git
+sudo cp -r moviescheduleproject/* /var/www/html/
+sudo chown -R www-data:www-data /var/www/html
+sudo mariadb < /var/www/html/sql/create_tables.sql
+http://<your-RPi-IP-address>/
+
+
+if apache2 error use:
+sudo mkdir -p /var/log/apache2
+sudo systemctl restart apache2
