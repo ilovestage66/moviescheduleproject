@@ -17,7 +17,7 @@ git clone https://github.com/ilovestage66/moviescheduleproject.git
 sudo cp -r moviescheduleproject/* /var/www/html/
 sudo chown -R www-data:www-data /var/www/html
 sudo mariadb < /var/www/html/sql/create_tables.sql
-http://<your-RPi-IP-address>/
+http://your-RPi-IP-address/
 
 
 if apache2 error use:
